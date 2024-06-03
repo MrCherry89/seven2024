@@ -82,4 +82,84 @@ $(document).ready(function () {
       },
     ],
   });
+
+
+
+
+  let center5 = [55.707076, 37.385825];
+  let center6 = [55.847076, 37.485825];
+  let center7 = [55.687076, 36.885825];
+
+  function init() {
+    let map = new ymaps.Map("map", {
+      center: center5,
+      zoom: 9,
+      controls: [],
+    });
+
+    let placemark2 = new ymaps.Placemark(
+      center5,
+      {
+        balloonContent: `
+        
+        <div class="balloon-wrap2">
+    </div>
+        
+        `,
+      },
+      {
+        iconLayout: "default#image",
+        iconImageHref: "img/map-marker.svg",
+        iconImageOffset: [0, 0],
+        iconImageSize: [100, 34],
+        hideIconOnBalloonOpen: false,
+      }
+    );
+
+    let placemark3 = new ymaps.Placemark(
+      center6,
+      {
+        balloonContent: `
+
+        <div class="balloon-wrap2">
+    </div>
+
+            `,
+      },
+      {
+        iconLayout: "default#image",
+        iconImageHref: "img/map-marker.svg",
+        iconImageOffset: [0, 0],
+        iconImageSize: [100, 34],
+        hideIconOnBalloonOpen: false,
+      }
+    );
+
+    let placemark4 = new ymaps.Placemark(
+      center7,
+      {
+        balloonContent: `
+
+        <div class="balloon-wrap2">
+    </div>
+
+            `,
+      },
+      {
+        iconLayout: "default#image",
+        iconImageHref: "img/map-marker.svg",
+        iconImageOffset: [0, 0],
+        iconImageSize: [100, 34],
+        hideIconOnBalloonOpen: false,
+      }
+    );
+
+    map.geoObjects.add(placemark2);
+    map.geoObjects.add(placemark3);
+    map.geoObjects.add(placemark4);
+    map.behaviors.disable("scrollZoom");
+
+    // placemark.balloon.open();
+  }
+  ymaps.ready(init);
 });
