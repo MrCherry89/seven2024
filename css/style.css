@@ -493,6 +493,13 @@ a:focus {
   padding-bottom: 10px;
   margin-top: 40px;
 }
+@media (max-width: 767px) {
+  .equipment__info__view {
+    padding-bottom: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
 .equipment__info__view:hover {
   border-color: transparent;
 }
@@ -882,7 +889,7 @@ a:focus {
 .header__menu__market a svg {
   margin-left: 8px;
 }
-.header__menu__market button {
+.header__menu__market a.btn-blue {
   margin-left: 20px;
 }
 .header__mobile {
@@ -1024,6 +1031,20 @@ a:focus {
   justify-content: start;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .page__title.col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1024px) {
+  .page__title {
+    font-size: 32px;
+  }
+}
 @media (max-width: 992px) {
   .page__title {
     margin-top: 30px;
@@ -1041,9 +1062,9 @@ a:focus {
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .page__title {
-    font-size: 35px;
+    font-size: 24px;
   }
 }
 .page__title__subtitle {
@@ -1054,6 +1075,17 @@ a:focus {
   margin-left: 20px;
   margin-bottom: 20px;
   border-radius: 30px;
+}
+@media (max-width: 767px) {
+  .page__title__subtitle {
+    margin-top: 15px;
+    font-size: 15px;
+    margin-left: 0;
+    padding: 10px 15px;
+  }
+}
+.page__title_white {
+  color: white;
 }
 
 .tariffs {
@@ -2066,59 +2098,6 @@ a:focus {
   color: white;
 }
 
-.tariffs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-}
-@media (max-width: 1300px) {
-  .tariffs {
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-.tariffs__items {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-@media (max-width: 1300px) {
-  .tariffs__items {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-.tariffs__items li {
-  color: #7c8499;
-  margin-right: 5px;
-  font-size: 20px;
-  height: 44px;
-  font-weight: 600;
-  padding: 0 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.tariffs__items li:hover {
-  color: #000f4c;
-}
-.tariffs__items li.active {
-  align-items: center;
-  border-radius: 8px;
-  background: #7c8499;
-  color: #fff;
-  cursor: default;
-}
-@media (max-width: 1300px) {
-  .tariffs .blue-btn {
-    width: 100%;
-  }
-}
-
 .def__tab {
   margin-top: 40px;
   border-bottom: 1px solid #f5f5f5;
@@ -2126,6 +2105,16 @@ a:focus {
   display: flex;
   justify-content: start;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .def__tab {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .def__tab::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 .def__tab__item {
   color: #7c8499;
