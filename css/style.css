@@ -2643,7 +2643,8 @@ a:focus {
 }
 .network-map__info__top form .btn-blue {
   height: 54px;
-  min-width: 210px;
+  min-width: 230px;
+  font-size: 18px;
 }
 .network-map__info-map #map {
   width: 100%;
