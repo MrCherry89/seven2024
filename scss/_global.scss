@@ -1,0 +1,149 @@
+body,
+html {
+  font-family: "Inter";
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+body {
+  @include flex;
+  @include dir-col;
+  @include justify-between;
+}
+
+input,
+textarea {
+  border: none;
+  color: #1d1d1b;
+  @include placeholder {
+    color: #979797;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  background: none;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.checkbox-wrap {
+  label {
+    @include flex;
+    @include align-center;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7c8499;
+    a {
+      font-size: 16px;
+      font-weight: 600;
+      color: #7c8499;
+      border-bottom: 1px solid #7c8499;
+      margin-left: 5px;
+      display: inline;
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+    p {
+    }
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+    }
+
+    input:checked ~ span:after {
+      opacity: 1;
+    }
+
+    span {
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: relative;
+      transition: 0.2s;
+      border: 1px solid #d5dadf;
+      border-radius: 4px;
+      margin-right: 10px;
+
+      @media (max-width: 767px) {
+        margin-right: 10px;
+      }
+
+      &:after {
+        content: "";
+        background: url(../img/ckeck.svg) no-repeat center center/cover;
+        width: 13px;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -5px;
+        margin-left: -6px;
+        opacity: 0;
+        transition: 0.2s;
+      }
+    }
+  }
+}
