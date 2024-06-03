@@ -251,7 +251,9 @@
                 />
               </svg>
             </a>
-            <button class="btn-blue">Подключиться</button>
+            <a href="#submit-application-popup" class="btn-blue popup"
+              >Подключиться</a
+            >
           </div>
         </div>
         <div class="header__mobile">
@@ -354,7 +356,7 @@
         </ul>
       </div>
 
-      <h1 class="page__title">
+      <h1 class="page__title col">
         Тарифы
         <span class="page__title__subtitle">
           Данные тарифы актуальны для вашей текущей выбранной геопозиции
@@ -1909,6 +1911,56 @@
     <script src="js/script.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+    <div
+      id="submit-application-popup"
+      class="mfp-hide white-popup mfp-with-anim main-popup"
+    >
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <h2>Заявка на подключение</h2>
+        <form class="form">
+          <div class="form-info">
+            <h3>Заполните форму ниже и мы проверим возможность подключения</h3>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+              class="main-input"
+            />
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Контактный телефон"
+              class="main-input"
+            />
+            <input
+              type="text"
+              name="text"
+              placeholder="Адрес"
+              class="main-input"
+            />
+
+            <div class="checkbox-wrap">
+              <label>
+                <input type="checkbox" checked />
+                <span></span>
+                <p>
+                  Вы даете согласие на
+                  <a href="#">обработку персональных данных</a>
+                </p>
+              </label>
+            </div>
+            <p>Заполните все поля, чтобы продолжить</p>
+            <button class="btn-blue">Оставить заявку</button>
+          </div>
+          <div class="img-wrap">
+            <img src="" alt="" />
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script>
       let center5 = [55.707076, 37.385825];
