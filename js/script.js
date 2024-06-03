@@ -83,6 +83,11 @@ $(document).ready(function () {
     ],
   });
 
+  $(".popup").magnificPopup({
+    type: "inline",
+    mainClass: "mfp-fade",
+  });
+
 
 
 
