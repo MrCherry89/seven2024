@@ -8,6 +8,7 @@
     <title>SEO</title>
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -1910,6 +1911,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
     <div
@@ -1918,10 +1920,12 @@
     >
       <div class="popup-body">
         <button title="Close (Esc)" type="button" class="mfp-close"></button>
-        <h2>Заявка на подключение</h2>
-        <form class="form">
-          <div class="form-info">
-            <h3>Заполните форму ниже и мы проверим возможность подключения</h3>
+        <h2 class="page__title_small">Заявка на подключение</h2>
+        <form class="submit-form">
+          <div class="submit-form__info">
+            <h3 class="submit-form__title">
+              Заполните форму ниже и мы проверим возможность подключения
+            </h3>
             <input
               type="text"
               name="name"
@@ -1952,11 +1956,13 @@
                 </p>
               </label>
             </div>
-            <p>Заполните все поля, чтобы продолжить</p>
+            <p class="submit-form__text">
+              Заполните все поля, чтобы продолжить
+            </p>
             <button class="btn-blue">Оставить заявку</button>
           </div>
-          <div class="img-wrap">
-            <img src="" alt="" />
+          <div class="submit-form__img-wrap">
+            <img src="img/application-popup-img.jpg" alt="" />
           </div>
         </form>
       </div>
