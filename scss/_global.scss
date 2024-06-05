@@ -88,6 +88,9 @@ a {
     font-size: 16px;
     font-weight: 600;
     color: #7c8499;
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
     a {
       font-size: 16px;
       font-weight: 600;
@@ -95,11 +98,17 @@ a {
       border-bottom: 1px solid #7c8499;
       margin-left: 5px;
       display: inline;
+      @media (max-width: 767px) {
+        font-size: 15px;
+      }
       &:hover {
         border-bottom-color: transparent;
       }
     }
     p {
+      @media (max-width: 767px) {
+        font-size: 15px;
+      }
     }
 
     input {
