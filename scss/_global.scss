@@ -156,3 +156,36 @@ a {
     }
   }
 }
+
+.slick-dots {
+  li {
+    margin-left: 5px;
+    width: auto;
+    height: auto;
+    button {
+      width: 6px;
+      height: 6px;
+      transition: 0.3s;
+
+      &:before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50px;
+        background: #7c8499;
+        opacity: 1;
+        transition: 0.3s;
+      }
+    }
+    &.slick-active {
+      button {
+        width: 40px;
+        &:before {
+          opacity: 1;
+          background: #00aeef;
+          width: 40px;
+        }
+      }
+    }
+  }
+}

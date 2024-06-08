@@ -62,6 +62,56 @@ $(document).ready(function () {
     $("body, html").removeClass("overflow");
   });
 
+  $(".review-info__slider").slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 800,
+    cssEase: "ease-in-out",
+    prevArrow: $(".review-info .slider-navigation .slick-prev"),
+    nextArrow: $(".review-info .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+        },
+      },
+    ],
+  });
+
+  $(".additional-info__slider").slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 800,
+    cssEase: "ease-in-out",
+    prevArrow: $(".additional-info .slider-navigation .slick-prev"),
+    nextArrow: $(".additional-info .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1401,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
+  });
+
   $(".equipment-info__slider").slick({
     dots: false,
     arrows: true,
@@ -80,7 +130,82 @@ $(document).ready(function () {
           cssEase: "ease-in-out",
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
     ],
+  });
+
+  $(".news-info__slider").slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 800,
+    cssEase: "ease-in-out",
+    prevArrow: $(".news-info .slider-navigation .slick-prev"),
+    nextArrow: $(".news-info .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
+  });
+
+  $(".tariffs-slider").slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 800,
+    cssEase: "ease-in-out",
+    prevArrow: $(".tariffs .slider-navigation .slick-prev"),
+    nextArrow: $(".tariffs .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1251,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  $(".banner-slider").slick({
+    dots: true,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 800,
+    cssEase: "ease-in-out",
+    prevArrow: $(".banner__left .slider-navigation .slick-prev"),
+    nextArrow: $(".banner__left .slider-navigation .slick-next"),
   });
 
   $(".popup").magnificPopup({
