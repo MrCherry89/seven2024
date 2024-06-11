@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>SevenSky</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header" aria-label="header">
+        <div class="header-info">
+          <div class="header-dropdown">
+            <div class="header-dropdown__item header-dropdown__item_white">
+              <button class="header-dropdown__btn">
+                Для дома
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke="#7C8499"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <div class="header-dropdown__content">
+                <a href="javascript:;" class="header-dropdown__content-link"
+                  >Для частного дома</a
+                >
+              </div>
+            </div>
+            <div class="header-dropdown__item">
+              <button class="header-dropdown__btn">
+                Для бизнеса
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke="#FFF"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <div class="header-dropdown__content">
+                <a href="javascript:;" class="header-dropdown__content-link"
+                  >Для партнеров</a
+                >
+                <a href="javascript:;" class="header-dropdown__content-link"
+                  >Для операторов связи</a
+                >
+                <a href="javascript:;" class="header-dropdown__content-link"
+                  >Для госструктур</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header-info__items">
+            <div class="header-info__items-title header-info__items-title_tel">
+              <span>Техподдержка</span>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_5722_118120)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.987 1.50004C6.56897 1.49249 6.15354 1.56746 5.76451 1.72064C5.37548 1.87382 5.02048 2.10222 4.71981 2.39275C4.41915 2.68329 4.17874 3.03027 4.01232 3.41383C3.84591 3.79738 3.75677 4.20999 3.75 4.62804V9.00004C3.75 9.26526 3.64464 9.51961 3.45711 9.70715C3.26957 9.89469 3.01522 10 2.75 10H1.5C1.10218 10 0.720644 9.84201 0.43934 9.5607C0.158035 9.2794 0 8.89787 0 8.50004L0 6.50004C0 6.10222 0.158035 5.72069 0.43934 5.43938C0.720644 5.15808 1.10218 5.00004 1.5 5.00004H2.25V4.61004C2.25912 3.99544 2.38923 3.38865 2.63289 2.82433C2.87655 2.26001 3.22899 1.74922 3.67009 1.32113C4.11118 0.893039 4.63228 0.556032 5.20363 0.329358C5.77499 0.102683 6.3854 -0.00921854 7 4.30325e-05C7.6146 -0.00921854 8.22501 0.102683 8.79637 0.329358C9.36772 0.556032 9.88882 0.893039 10.3299 1.32113C10.771 1.74922 11.1234 2.26001 11.3671 2.82433C11.6108 3.38865 11.7409 3.99544 11.75 4.61004V5.00004H12.5C12.8978 5.00004 13.2794 5.15808 13.5607 5.43938C13.842 5.72069 14 6.10222 14 6.50004V8.50004C14 8.89787 13.842 9.2794 13.5607 9.5607C13.2794 9.84201 12.8978 10 12.5 10H11.75V10.5C11.7501 11.1758 11.5014 11.8279 11.0514 12.332C10.6013 12.8361 9.98145 13.1569 9.31 13.233C9.1796 13.4659 8.98946 13.6597 8.75919 13.7945C8.52891 13.9293 8.26684 14.0003 8 14H6.5C6.10218 14 5.72064 13.842 5.43934 13.5607C5.15804 13.2794 5 12.8979 5 12.5C5 12.1022 5.15804 11.7207 5.43934 11.4394C5.72064 11.1581 6.10218 11 6.5 11H8C8.542 11 9.017 11.287 9.28 11.718C9.55563 11.6547 9.80162 11.4997 9.97781 11.2785C10.154 11.0573 10.2499 10.7829 10.25 10.5V4.62704C10.2431 4.20684 10.1531 3.79217 9.98496 3.407C9.81687 3.02182 9.57409 2.67379 9.27067 2.38301C8.96725 2.09224 8.6092 1.86449 8.21722 1.71293C7.82524 1.56138 7.40711 1.48902 6.987 1.50004Z"
+                    fill="#7C8499"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5722_118120">
+                    <rect width="14" height="14" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <a href="tel: +7 (495) 640-10-10" class="def-link-grey"
+                >+7 (495) 640-10-10</a
+              >
+            </div>
+            <div class="header-info__items-title header-info__items-title_tel">
+              <span>Отдел продаж</span>
+              <a href="tel: +7 (495) 989-24-94" class="def-link-grey"
+                >+7 (495) 989-24-94</a
+              >
+            </div>
+            <div class="header-info__items-time">24/7</div>
+            <div
+              class="header-info__items-title header-info__items-title_ordynka"
+            >
+              <a href="tel: +7 (495) 989-24-94" class="def-link-grey">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.6962 1.96563L2.07262 7.27741C1.28839 7.66953 1.35256 8.80921 2.17585 9.11081L5.77477 10.4292C6.05096 10.5304 6.26859 10.748 6.36977 11.0242L7.60073 14.3844C7.91447 15.2409 9.1171 15.2646 9.46438 14.4212L14.0681 3.24081C14.4201 2.38595 13.5231 1.55219 12.6962 1.96563Z"
+                    stroke="#7C8499"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                ЖК Малая Ордынка
+              </a>
+            </div>
+            <div
+              class="header-info__items-title header-info__items-title_login"
+            >
+              <a href="tel: +7 (495) 989-24-94" class="def-link-grey">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="7"
+                    cy="7"
+                    r="6"
+                    stroke="#7C8499"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M11 12L15 16"
+                    stroke="#7C8499"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span>Поиск</span>
+              </a>
+            </div>
+            <div
+              class="header-info__items-title header-info__items-title_login"
+            >
+              <a href="tel: +7 (495) 989-24-94" class="def-link-grey">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="9"
+                    cy="4"
+                    r="3"
+                    stroke="#7C8499"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M17 17C17 12.5817 13.4183 10 9 10C4.58172 10 1 12.5817 1 17"
+                    stroke="#7C8499"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span>Войти</span>
+              </a>
+            </div>
+            <div class="mobile__menu">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="36" height="36" rx="10" fill="#7C8499" />
+                <path
+                  d="M11 11C10.4477 11 10 11.4477 10 12C10 12.5523 10.4477 13 11 13H25C25.5523 13 26 12.5523 26 12C26 11.4477 25.5523 11 25 11H11ZM10 18C10 18.5523 10.4477 19 11 19H25C25.5523 19 26 18.5523 26 18C26 17.4477 25.5523 17 25 17H11C10.4477 17 10 17.4477 10 18ZM10 24C10 24.5523 10.4477 25 11 25H25C25.5523 25 26 24.5523 26 24C26 23.4477 25.5523 23 25 23H11C10.4477 23 10 23.4477 10 24Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header-menu">
+          <a href="index.html" class="header-menu__logo">
+            <img
+              src="img/logo-header.svg"
+              alt="Logo site"
+              width="149"
+              height="40"
+            />
+          </a>
+          <ul class="header-menu__links">
+            <li>
+              <a href="#" class="def-link__dark-blue">О компании</a>
+            </li>
+            <li>
+              <a href="tariffs.html" class="def-link__dark-blue">Тарифы</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Акции</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Оборудование</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Новости</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Вакансии</a>
+            </li>
+          </ul>
+          <div class="header-menu__market">
+            <a href="#" class="def-link-blue">
+              Seven Sky Market
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 1H3C1.89543 1 1 1.89543 1 3V15C1 16.1046 1.89543 17 3 17H15C16.1046 17 17 16.1046 17 15V8M6.5 10.5L17 1M17 1H12.5M17 1V5"
+                  stroke="#00AEEF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a href="#submit-application-popup" class="blue-btn popup"
+              >Подключиться</a
+            >
+          </div>
+        </div>
+        <div class="header-mobile">
+          <div class="close-menu">
+            <img src="img/close.svg" alt="" />
+          </div>
+          <ul class="header-menu__links">
+            <li>
+              <a href="#" class="def-link__dark-blue">О компании</a>
+            </li>
+            <li>
+              <a href="tariffs.html" class="def-link__dark-blue">Тарифы</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Акции</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Оборудование</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Новости</a>
+            </li>
+            <li>
+              <a href="#" class="def-link__dark-blue">Вакансии</a>
+            </li>
+          </ul>
+          <div class="header-info__items-title header-info__items-title_tel">
+            <span>Техподдержка</span>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_5722_118120)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.987 1.50004C6.56897 1.49249 6.15354 1.56746 5.76451 1.72064C5.37548 1.87382 5.02048 2.10222 4.71981 2.39275C4.41915 2.68329 4.17874 3.03027 4.01232 3.41383C3.84591 3.79738 3.75677 4.20999 3.75 4.62804V9.00004C3.75 9.26526 3.64464 9.51961 3.45711 9.70715C3.26957 9.89469 3.01522 10 2.75 10H1.5C1.10218 10 0.720644 9.84201 0.43934 9.5607C0.158035 9.2794 0 8.89787 0 8.50004L0 6.50004C0 6.10222 0.158035 5.72069 0.43934 5.43938C0.720644 5.15808 1.10218 5.00004 1.5 5.00004H2.25V4.61004C2.25912 3.99544 2.38923 3.38865 2.63289 2.82433C2.87655 2.26001 3.22899 1.74922 3.67009 1.32113C4.11118 0.893039 4.63228 0.556032 5.20363 0.329358C5.77499 0.102683 6.3854 -0.00921854 7 4.30325e-05C7.6146 -0.00921854 8.22501 0.102683 8.79637 0.329358C9.36772 0.556032 9.88882 0.893039 10.3299 1.32113C10.771 1.74922 11.1234 2.26001 11.3671 2.82433C11.6108 3.38865 11.7409 3.99544 11.75 4.61004V5.00004H12.5C12.8978 5.00004 13.2794 5.15808 13.5607 5.43938C13.842 5.72069 14 6.10222 14 6.50004V8.50004C14 8.89787 13.842 9.2794 13.5607 9.5607C13.2794 9.84201 12.8978 10 12.5 10H11.75V10.5C11.7501 11.1758 11.5014 11.8279 11.0514 12.332C10.6013 12.8361 9.98145 13.1569 9.31 13.233C9.1796 13.4659 8.98946 13.6597 8.75919 13.7945C8.52891 13.9293 8.26684 14.0003 8 14H6.5C6.10218 14 5.72064 13.842 5.43934 13.5607C5.15804 13.2794 5 12.8979 5 12.5C5 12.1022 5.15804 11.7207 5.43934 11.4394C5.72064 11.1581 6.10218 11 6.5 11H8C8.542 11 9.017 11.287 9.28 11.718C9.55563 11.6547 9.80162 11.4997 9.97781 11.2785C10.154 11.0573 10.2499 10.7829 10.25 10.5V4.62704C10.2431 4.20684 10.1531 3.79217 9.98496 3.407C9.81687 3.02182 9.57409 2.67379 9.27067 2.38301C8.96725 2.09224 8.6092 1.86449 8.21722 1.71293C7.82524 1.56138 7.40711 1.48902 6.987 1.50004Z"
+                  fill="#7C8499"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_5722_118120">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <a href="tel: +7 (495) 640-10-10" class="def-link-grey"
+              >+7 (495) 640-10-10</a
+            >
+          </div>
+          <div class="header-info__items-title header-info__items-title_tel">
+            <span>Отдел продаж</span>
+            <a href="tel: +7 (495) 989-24-94" class="def-link-grey"
+              >+7 (495) 989-24-94</a
+            >
+          </div>
+          <div class="header-info__items-time">24/7</div>
+          <div class="header-mobile__social">
+            <span>Так же мы доступны в мессенджерах</span>
+            <div class="social-icons">
+              <a href="#" class="social-icons__tg"
+                ><img src="img/soc-icon1.svg" alt=""
+              /></a>
+              <a href="#" class="social-icons__wp"
+                ><img src="img/soc-icon2.svg" alt=""
+              /></a>
+              <a href="#" class="social-icons__vb"
+                ><img src="img/soc-icon3.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="breadcrumb" aria-label="breadcrumb">
+        <ul>
+          <li>
+            <a href="#" class="def-link-grey">Главная</a>
+          </li>
+          <li class="breadcrumb__right">
+            <svg
+              width="11"
+              height="10"
+              viewBox="0 0 11 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.380859 4.04487H8.33086L5.34586 1.04487L6.39586 -0.00512695L10.5809 4.19487V5.51487L6.41086 9.71487L5.34586 8.63487L8.33086 5.66487H0.380859V4.04487Z"
+                fill="#7C8499"
+              />
+            </svg>
+          </li>
+          <li>
+            <a href="#" class="def-link-grey">Новости</a>
+          </li>
+          <li class="breadcrumb__right">
+            <svg
+              width="11"
+              height="10"
+              viewBox="0 0 11 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.380859 4.04487H8.33086L5.34586 1.04487L6.39586 -0.00512695L10.5809 4.19487V5.51487L6.41086 9.71487L5.34586 8.63487L8.33086 5.66487H0.380859V4.04487Z"
+                fill="#7C8499"
+              />
+            </svg>
+          </li>
+          <li>
+            <span
+              >Подключен новый дом к сети интернет г.Москва, Волгоградский
+              пр-кт, р-н район Кузьминки!</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="news-block">
+        <div class="news-block__info news-block__info_width">
+          <div class="news-item__top">
+            <div class="news-item__date">
+              26 <br />
+              сен
+            </div>
+            <div class="news-item__text">Техническая новость</div>
+          </div>
+          <h2 class="main-title">
+            Подключен новый дом к сети интернет Москва, Волгоградский пр-кт, р-н
+            район Кузьминки!
+          </h2>
+          <img src="img/news-in-img.jpg" alt="" class="news-in-img" />
+          <p class="news-block__info-text">
+            Уважаемые жители района Кузьминки ! <br />
+            Мы рады сообщить Вам о подключении к сети Интернет нового жилого
+            дома!
+          </p>
+          <p class="news-block__info-text">
+            Теперь жители дома по адресу: <br />
+            - Волгоградский пр-кт, д.105А <br />
+            имеют возможность воспользоваться услугами интернет, телефонии,
+            мобильной связи и цифрового телевидения!
+          </p>
+          <p class="news-block__info-text">
+            Вам доступны пакетные предложения на услуги связи по выгодной цене!
+          </p>
+          <a href="#" class="blue-btn">Оставить заявку</a>
+          <div class="share">
+            <span class="share__text">Поделиться</span>
+            <div class="share__links">
+              <a href="#" class="share__link">
+                <img src="img/vk.svg" alt="" />
+              </a>
+              <a href="#" class="share__link">
+                <img src="img/od.svg" alt="" />
+              </a>
+              <a href="#" class="share__link">
+                <img src="img/yandex.svg" alt="" />
+              </a>
+              <a href="#" class="share__link">
+                <img src="img/google.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="news-info">
+        <h2 class="main-title">Другие новости</h2>
+        <div class="slider-navigation">
+          <button type="button" class="slick-prev">
+            <img src="img/slider-arrow.svg" alt="" />
+          </button>
+          <button type="button" class="slick-next">
+            <img src="img/slider-arrow.svg" alt="" />
+          </button>
+        </div>
+        <div class="news-info__slider">
+          <a href="#" class="news-info__slider-item news-item">
+            <div class="news-item__top">
+              <div class="news-item__date">
+                26 <br />
+                сен
+              </div>
+              <div class="news-item__text">Техническая новость</div>
+            </div>
+            <span class="news-item__title"
+              >Десятки тысяч фильмов, сериалов и мультфильмов, а также до 300
+              каналов в одном приложении</span
+            >
+            <div class="news-item__tags">
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+            </div>
+          </a>
+          <a href="#" class="news-info__slider-item news-item">
+            <div class="news-item__top">
+              <div class="news-item__date">
+                12 <br />
+                сен
+              </div>
+              <div class="news-item__text">Новости компании</div>
+            </div>
+            <span class="news-item__title"
+              >Чтобы подключить интернет-ТВ, вам нужно оформить заявку и
+              потратить не более 30 минут на монтаж и настройку</span
+            >
+            <div class="news-item__tags">
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+            </div>
+          </a>
+          <a href="#" class="news-info__slider-item news-item">
+            <div class="news-item__top">
+              <div class="news-item__date">
+                08 <br />
+                авг
+              </div>
+              <div class="news-item__text">Новости компанииь</div>
+            </div>
+            <span class="news-item__title"
+              >Он не уедет, пока у вас не заработает быстрый Домашний
+              интернет</span
+            >
+            <div class="news-item__tags">
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+            </div>
+          </a>
+          <a href="#" class="news-info__slider-item news-item">
+            <div class="news-item__top">
+              <div class="news-item__date">
+                26 <br />
+                сен
+              </div>
+              <div class="news-item__text">Техническая новость</div>
+            </div>
+            <span class="news-item__title"
+              >Десятки тысяч фильмов, сериалов и мультфильмов, а также до 300
+              каналов в одном приложении</span
+            >
+            <div class="news-item__tags">
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+            </div>
+          </a>
+          <a href="#" class="news-info__slider-item news-item">
+            <div class="news-item__top">
+              <div class="news-item__date">
+                12 <br />
+                сен
+              </div>
+              <div class="news-item__text">Новости компании</div>
+            </div>
+            <span class="news-item__title"
+              >Чтобы подключить интернет-ТВ, вам нужно оформить заявку и
+              потратить не более 30 минут на монтаж и настройку</span
+            >
+            <div class="news-item__tags">
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+            </div>
+          </a>
+          <a href="#" class="news-info__slider-item news-item">
+            <div class="news-item__top">
+              <div class="news-item__date">
+                08 <br />
+                авг
+              </div>
+              <div class="news-item__text">Новости компанииь</div>
+            </div>
+            <span class="news-item__title"
+              >Он не уедет, пока у вас не заработает быстрый Домашний
+              интернет</span
+            >
+            <div class="news-item__tags">
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+              <span class="news-item__tag">#хештэг</span>
+            </div>
+          </a>
+        </div>
+        <a href="#" class="link-style">Смотреть все</a>
+      </div>
+    </div>
+
+    <div class="blue-bg">
+      <div class="wrapper">
+        <div class="faq">
+          <h2 class="main-title main-title_white">Часто задаваемые вопросы</h2>
+          <div class="faq-info">
+            <ul class="accordion-list">
+              <li class="accordion-list-item">
+                <div class="item-heading">
+                  <span class="text blue">Как оставить заявку?</span>
+                  <span class="icon rotate"></span>
+                </div>
+                <div class="item-body show">
+                  <p>
+                    Чтобы подключить интернет-ТВ, вам нужно оформить заявку и
+                    потратить н е более 30 минут на монтаж и настройку. Просто
+                    нажмите «Подключить» или «Обратный звонок». Перед этим
+                    выберите тариф, а установка высокоскоростного интернета и
+                    интернет-ТВ — наша забота.
+                  </p>
+                  <a href="#" class="blue-btn">Оставить заявку</a>
+                </div>
+              </li>
+              <li class="accordion-list-item">
+                <div class="item-heading">
+                  <span class="text">Чем поможет оператор?</span>
+                  <span class="icon"></span>
+                </div>
+                <div class="item-body">
+                  <p>
+                    Чтобы подключить интернет-ТВ, вам нужно оформить заявку и
+                    потратить н е более 30 минут на монтаж и настройку. Просто
+                    нажмите «Подключить» или «Обратный звонок». Перед этим
+                    выберите тариф, а установка высокоскоростного интернета и
+                    интернет-ТВ — наша забота.
+                  </p>
+                  <a href="#" class="blue-btn">Оставить заявку</a>
+                </div>
+              </li>
+              <li class="accordion-list-item">
+                <div class="item-heading">
+                  <span class="text"
+                    >Как монтажник подключит оборудование?
+                  </span>
+                  <span class="icon"></span>
+                </div>
+                <div class="item-body">
+                  <p>
+                    Чтобы подключить интернет-ТВ, вам нужно оформить заявку и
+                    потратить н е более 30 минут на монтаж и настройку. Просто
+                    нажмите «Подключить» или «Обратный звонок». Перед этим
+                    выберите тариф, а установка высокоскоростного интернета и
+                    интернет-ТВ — наша забота.
+                  </p>
+                  <a href="#" class="blue-btn">Оставить заявку</a>
+                </div>
+              </li>
+              <li class="accordion-list-item">
+                <div class="item-heading">
+                  <span class="text">Монтажник всё настроит?</span>
+                  <span class="icon"></span>
+                </div>
+                <div class="item-body">
+                  <p>
+                    Чтобы подключить интернет-ТВ, вам нужно оформить заявку и
+                    потратить н е более 30 минут на монтаж и настройку. Просто
+                    нажмите «Подключить» или «Обратный звонок». Перед этим
+                    выберите тариф, а установка высокоскоростного интернета и
+                    интернет-ТВ — наша забота.
+                  </p>
+                  <a href="#" class="blue-btn">Оставить заявку</a>
+                </div>
+              </li>
+              <li class="accordion-list-item">
+                <div class="item-heading">
+                  <span class="text">Что входит в тариф?</span>
+                  <span class="icon"></span>
+                </div>
+                <div class="item-body">
+                  <p>
+                    Чтобы подключить интернет-ТВ, вам нужно оформить заявку и
+                    потратить н е более 30 минут на монтаж и настройку. Просто
+                    нажмите «Подключить» или «Обратный звонок». Перед этим
+                    выберите тариф, а установка высокоскоростного интернета и
+                    интернет-ТВ — наша забота.
+                  </p>
+                  <a href="#" class="blue-btn">Оставить заявку</a>
+                </div>
+              </li>
+            </ul>
+            <div class="faq-info__questions">
+              <h2 class="main-title_small">Остались вопросы?</h2>
+              <form class="questions-form">
+                <span class="questions-form__text">Позвоните нам</span>
+                <a href="tel:+74959892494" class="questions-form__phone"
+                  >+7 (495) 989-24-94</a
+                >
+                <span class="questions-form__text">Или мы вам перезвоним</span>
+                <div class="questions-form__inputs">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                    class="main-input"
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Телефон "
+                    class="main-input"
+                  />
+                  <button class="blue-btn">
+                    <img src="img/button-arrow.svg" alt="" />
+                  </button>
+                </div>
+                <div class="checkbox-wrap">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span></span>
+                    <p>
+                      Вы даете согласие на
+                      <a href="#">обработку персональных данных</a>
+                    </p>
+                  </label>
+                </div>
+                <span class="questions-form__text"
+                  >Так же мы доступны в мессенджерах</span
+                >
+                <div class="social-icons">
+                  <a href="#" class="social-icons__tg"
+                    ><img src="img/soc-icon1.svg" alt=""
+                  /></a>
+                  <a href="#" class="social-icons__wp"
+                    ><img src="img/soc-icon2.svg" alt=""
+                  /></a>
+                  <a href="#" class="social-icons__vb"
+                    ><img src="img/soc-icon3.svg" alt=""
+                  /></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="footer__items">
+              <h2 class="footer__title">
+                Услуги <img src="img/link-arrow.svg" alt="" />
+              </h2>
+              <a href="#" class="footer__link">Для дома</a>
+              <a href="#" class="footer__link">Для частного дома</a>
+              <a href="#" class="footer__link">Для бизнеса</a>
+              <a href="#" class="footer__link">Для операторов связи</a>
+              <a href="#" class="footer__link">Для партнёров</a>
+              <a href="#" class="footer__link">Для госсектора</a>
+            </div>
+            <div class="footer__items">
+              <h2 class="footer__title">
+                Компания <img src="img/link-arrow.svg" alt="" />
+              </h2>
+              <a href="#" class="footer__link">О компании</a>
+              <a href="#" class="footer__link">Лицензии</a>
+              <a href="#" class="footer__link">База знаний</a>
+              <a href="#" class="footer__link">Новости</a>
+              <a href="#" class="footer__link">Вакансии</a>
+              <a href="#" class="footer__link">Контакты</a>
+            </div>
+            <div class="footer__items">
+              <h2 class="footer__title">
+                Пользователям <img src="img/link-arrow.svg" alt="" />
+              </h2>
+              <a href="#" class="footer__link">Личный кабинет</a>
+              <a href="#" class="footer__link">Способ оплаты</a>
+              <a href="#" class="footer__link">Документы</a>
+              <a href="#" class="footer__link">Задать вопрос</a>
+              <a href="#" class="footer__link">Карта сайта</a>
+            </div>
+            <div class="footer__brands">
+              <h2 class="footer__title">Скачайте приложение</h2>
+              <div class="footer__brands-info">
+                <div class="footer__brands-qr">
+                  <img src="img/qr.png" alt="" />
+                </div>
+                <div class="footer__brands-items">
+                  <a href="#" class="footer__brands-item">
+                    <img src="img/brand-icon1.svg" alt="" />
+                  </a>
+                  <a href="#" class="footer__brands-item">
+                    <img src="img/brand-icon2.svg" alt="" />
+                  </a>
+                  <a href="#" class="footer__brands-item">
+                    <img src="img/brand-icon3.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__texts">
+              <div class="footer__text">
+                <span>Служба поддержки</span>
+                <a href="tel:+74956401010">+7 (495) 640-10-10</a>
+              </div>
+              <div class="footer__text">
+                <span>Отдел подключений</span>
+                <a href="tel:+74959892494">+7 (495) 989-24-94</a>
+              </div>
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg
+                    width="26"
+                    height="20"
+                    viewBox="0 0 26 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.4608 0.131505L2.03657 8.27737C0.574453 8.85641 0.582911 9.66062 1.76831 10.0192L7.26876 11.7111L19.9952 3.79398C20.5969 3.43298 21.1467 3.62718 20.6948 4.02274L10.3839 13.198H10.3815L10.3839 13.1992L10.0045 18.7894C10.5603 18.7894 10.8056 18.538 11.1174 18.2414L13.7891 15.6798L19.3463 19.7271C20.371 20.2835 21.1069 19.9975 21.3618 18.7918L25.0099 1.84003C25.3833 0.363835 24.4383 -0.304562 23.4608 0.131505Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg
+                    width="28"
+                    height="16"
+                    viewBox="0 0 28 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.25 16C5.684 16 0.228 9.994 0 0H4.792C4.95 7.336 8.482 10.442 11.28 11.082V0H15.792V6.326C18.556 6.054 21.46 3.172 22.438 0H26.95C26.5721 1.66393 25.8349 3.22508 24.79 4.574C23.7096 5.96715 22.3559 7.12483 20.812 7.976C22.5355 8.75297 24.0793 9.87863 25.346 11.282C26.5698 12.6383 27.4764 14.2499 28 16H23.034C22.5548 14.4703 21.6198 13.1235 20.354 12.14C19.0353 11.1105 17.4567 10.4673 15.794 10.282V16H15.25Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg
+                    width="16"
+                    height="28"
+                    viewBox="0 0 16 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.11603 0.267822C4.18537 0.267822 0.999023 3.45427 0.999023 7.38483C0.999023 11.3155 4.18537 14.5021 8.11603 14.5021C12.0467 14.5021 15.233 11.3155 15.233 7.38483C15.233 3.45427 12.0467 0.267822 8.11603 0.267822ZM8.11603 10.327C6.49123 10.327 5.17402 9.00973 5.17402 7.38493C5.17402 5.76013 6.49123 4.44292 8.11603 4.44292C9.74083 4.44292 11.058 5.76013 11.058 7.38493C11.058 9.00973 9.74083 10.327 8.11603 10.327Z"
+                    />
+                    <path
+                      d="M10.6285 20.1651C13.4777 19.5847 15.1851 18.2354 15.2754 18.163C16.1092 17.4944 16.2431 16.2764 15.5745 15.4426C14.9059 14.6089 13.6881 14.4749 12.8542 15.1435C12.8366 15.1577 11.0155 16.5547 8.0192 16.5567C5.023 16.5547 3.16344 15.1577 3.14582 15.1435C2.31188 14.4749 1.09407 14.6089 0.425535 15.4426C-0.243104 16.2764 -0.109172 17.4944 0.724565 18.163C0.816127 18.2364 2.594 19.6209 5.52308 20.1876L1.44087 24.4539C0.699001 25.2233 0.721306 26.4483 1.49067 27.1902C1.86619 27.5523 2.35018 27.7322 2.83376 27.7322C3.34076 27.7322 3.84726 27.5341 4.22695 27.1403L8.0193 23.1004L12.1947 27.1664C12.9512 27.9218 14.1763 27.9205 14.9314 27.1643C15.6865 26.408 15.6856 25.1827 14.9292 24.4276L10.6285 20.1651Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-info">
+              <a href="index.html" class="footer__logo">
+                <img src="img/logo-footer.svg" alt="" />
+              </a>
+              <div class="footer__bottom-text-wrap">
+                <p class="footer__bottom-text">
+                  АО «Искрателеком», 1999-2022, 125009, г. Москва, вн. тер. г.
+                  Муниципальный округ Пресненский, пер. Газетный, д. 9, стр. 7,
+                  этаж/ком/рабочее место 3/20/2 Карта сайта Пользовательское
+                  соглашение Политика конфиденциальности
+                </p>
+                <div class="footer__bottom-links">
+                  <a href="#" class="footer__bottom-link">Карта сайта</a>
+                  <a href="#" class="footer__bottom-link"
+                    >Пользовательское соглашение</a
+                  >
+                  <a href="#" class="footer__bottom-link"
+                    >Политика конфиденциальности</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom-text2">
+              Интернет провайдер «Seven Sky®» - это крупный провайдер в Москве и
+              Москвской Области, который оказывает комплекс телекоммуникационных
+              услуг. SevenSky предлагает стабильную скорость, превосходное
+              качество сигнала, демократичные тарифы на Домашний интернет ( в
+              том числе и Wi-fi), Цифровое телевидение и Ip-телефонию.
+              Профессиональная команда, качество услуг и сервисного
+              обслуживания, внимание к каждому клиенту привело к динамичному
+              развитию компании, и на данный момент Seven Sky® это более 200
+              тысяч подключенных домовладений и офисов в Московском регионе
+              <br />
+              &copy; АО "Искрателеком", 1999-2022, 125009, г. Москва, вн. тер.
+              г. Муниципальный округ Пресненский, пер. Газетный, д. 9, стр. 7,
+              этаж/ком/рабочее место 3/20/2
+            </div>
+            <a href="#" class="footer__bottom-brand-link">
+              Сделано в ДзенДизайн
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div
+      id="submit-application-popup"
+      class="mfp-hide white-popup mfp-with-anim main-popup"
+    >
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <h2 class="main-title_small">Заявка на подключение</h2>
+        <form class="submit-form">
+          <div class="submit-form__info">
+            <h3 class="submit-form__title">
+              Заполните форму ниже и мы проверим возможность подключения
+            </h3>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+              class="main-input"
+            />
+
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Контактный телефон"
+              class="main-input"
+            />
+            <input
+              type="text"
+              name="text"
+              placeholder="Адрес"
+              class="main-input"
+            />
+
+            <div class="checkbox-wrap">
+              <label>
+                <input type="checkbox" checked />
+                <span></span>
+                <p>
+                  Вы даете согласие на
+                  <a href="#">обработку персональных данных</a>
+                </p>
+              </label>
+            </div>
+            <p class="submit-form__text">
+              Заполните все поля, чтобы продолжить
+            </p>
+            <button class="blue-btn">Оставить заявку</button>
+          </div>
+          <div class="submit-form__img-wrap">
+            <img src="img/application-popup-img.jpg" alt="" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

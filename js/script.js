@@ -62,6 +62,10 @@ $(document).ready(function () {
     $("body, html").removeClass("overflow");
   });
 
+  $(".tags__item").on("click", function () {
+    $(this).toggleClass("tags__item_active");
+  });
+
   $(".review-info__slider").slick({
     dots: true,
     arrows: true,
