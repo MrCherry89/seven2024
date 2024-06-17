@@ -175,6 +175,33 @@ $(document).ready(function () {
     ],
   });
 
+  $(".promotions__slider").slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 800,
+    cssEase: "ease-in-out",
+    prevArrow: $(".promotions .slider-navigation .slick-prev"),
+    nextArrow: $(".promotions .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".tariffs-slider").slick({
     dots: true,
     arrows: true,
